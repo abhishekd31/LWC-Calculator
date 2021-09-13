@@ -21,24 +21,30 @@ export default class SimpleCalculator extends LightningElement {
         const firstN = parseInt(this.firstNumber);
         const secondN = parseInt(this.secondNumber);
 
-        this.currentResult = 'Result of' +firstN+ '+' +secondN+ 'is' +(firstN+secondN);
+        this.currentResult = `Result of ${firstN}+${secondN} is ${firstN+secondN}`;
+
     }
+
     subtractHandler(){
         const firstN = parseInt(this.firstNumber);
         const secondN = parseInt(this.secondNumber);
 
-        this.currentResult = 'Result of' +firstN+ '-' +secondN+ 'is' +(firstN-secondN);
+        this.currentResult = `Result of ${firstN}-${secondN} is ${firstN-secondN}`;
+
     }
     multiplyHandler(){
         const firstN = parseInt(this.firstNumber);
         const secondN = parseInt(this.secondNumber);
 
-        this.currentResult = 'Result of' +firstN+ '*' +secondN+ 'is' +(firstN*secondN);
-    }   
+        this.currentResult = `Result of ${firstN}*${secondN} is ${firstN*secondN}`;
+
+    }
     divideHandler(){
         const firstN = parseInt(this.firstNumber);
         const secondN = parseInt(this.secondNumber);
 
-        this.currentResult = 'Result of' +firstN+ '/' +secondN+ 'is' +(firstN/secondN);
+        this.currentResult = `Result of ${firstN}/${secondN} is ${firstN/secondN}`;
+
     }
+
 }
